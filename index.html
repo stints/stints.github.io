@@ -1,1 +1,52 @@
-
+<html>
+  <head>
+    <title>John Stinson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header id="header">
+      <h1>
+        John Stinson
+      </h1> 
+        software engineer<br />
+        <ul>
+          <li><a href="https://github.com/stints/" target="_blank">github</a></li>
+          <li><a href="https://www.linkedin.com/in/john-stinson-57a62848" target="_blank">linkedin</a></li>
+        </ul>
+    </header>
+    <main id="repos">
+    </main>
+    <script src="js/repos.js"></script>
+    <script>
+      GetRepos("stints", function() {
+        var repos = JSON.parse(this.response)
+        
+        // order by most recent updated first
+        repos.sort(function(i, j) {
+          return new Date(j['pushed_at']) - new Date(i['pushed_at'])
+        })
+        
+        
+        var main = document.getElementById('repos')
+        for (repo in repos) {
+          var repoEle = document.createElement('repo')
+          var header = document.createElement('header')
+          var desc = document.createElement('p')
+          var repoLink = document.createElement('a')
+          
+          repoLink.innerHTML = repos[repo]['name']
+          repoLink.href = repos[repo]['html_url']
+          repoLink.setAttribute('target', '_blank')
+          
+          desc.innerHTML = repos[repo]['description'] != "" ? repos[repo]['description'] : '---'
+          
+          header.appendChild(repoLink)
+          repoEle.appendChild(header)
+          repoEle.appendChild(desc)
+          main.appendChild(repoEle)
+        }
+      })
+    </script>
+  </body>
+</html>
