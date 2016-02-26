@@ -66,3 +66,10 @@ li a {
   padding: 5px 10px;
   background: #FF4081;
 }
+
+li a:hover {
+  color: #fff;
+  padding: 5px 10 px;
+  background: #F50057; 
+}
+}
