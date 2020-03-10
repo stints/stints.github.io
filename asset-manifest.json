@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/stints.github.io/static/css/main.00da87bb.chunk.css",
+    "main.js": "/stints.github.io/static/js/main.7a72018d.chunk.js",
+    "main.js.map": "/stints.github.io/static/js/main.7a72018d.chunk.js.map",
+    "runtime-main.js": "/stints.github.io/static/js/runtime-main.07d358b3.js",
+    "runtime-main.js.map": "/stints.github.io/static/js/runtime-main.07d358b3.js.map",
+    "static/css/2.aeed1b96.chunk.css": "/stints.github.io/static/css/2.aeed1b96.chunk.css",
+    "static/js/2.c02cf600.chunk.js": "/stints.github.io/static/js/2.c02cf600.chunk.js",
+    "static/js/2.c02cf600.chunk.js.map": "/stints.github.io/static/js/2.c02cf600.chunk.js.map",
+    "index.html": "/stints.github.io/index.html",
+    "precache-manifest.13de8fd8f52eb494c466abf74d28fbb0.js": "/stints.github.io/precache-manifest.13de8fd8f52eb494c466abf74d28fbb0.js",
+    "service-worker.js": "/stints.github.io/service-worker.js",
+    "static/css/2.aeed1b96.chunk.css.map": "/stints.github.io/static/css/2.aeed1b96.chunk.css.map",
+    "static/css/main.00da87bb.chunk.css.map": "/stints.github.io/static/css/main.00da87bb.chunk.css.map",
+    "static/js/2.c02cf600.chunk.js.LICENSE.txt": "/stints.github.io/static/js/2.c02cf600.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07d358b3.js",
+    "static/css/2.aeed1b96.chunk.css",
+    "static/js/2.c02cf600.chunk.js",
+    "static/css/main.00da87bb.chunk.css",
+    "static/js/main.7a72018d.chunk.js"
+  ]
+}
